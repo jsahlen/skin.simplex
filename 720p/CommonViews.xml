@@ -116,17 +116,17 @@
 				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				<control type="image">
 					<posx>44</posx>
-					<posy>159</posy>
+					<posy>305</posy>
 					<width>598</width>
 					<height>415</height>
 					<texture>thumb_background.png</texture>
 				</control>
 				<!-- Current Thumb reflection-->
 				<control type="image">
-					<posx>248</posx>
-					<posy>519</posy>
-					<width>188</width>
-					<height>280</height>
+					<posx>183</posx>
+					<posy>671</posy>
+					<width>320</width>
+					<height>480</height>
 					<texture background="true" diffuse="reflection_poster.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>1</fadetime>
@@ -134,10 +134,10 @@
 				<!-- /Current Thumb reflection-->
 				<!-- Current Thumb -->
 				<control type="image">
-					<posx>248</posx>
-					<posy>239</posy>
-					<width>188</width>
-					<height>280</height>
+					<posx>183</posx>
+					<posy>191</posy>
+					<width>320</width>
+					<height>480</height>
 					<texture background="true" diffuse="diffuse_poster.png">$INFO[ListItem.Thumb]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<bordertexture>border_poster.png</bordertexture>
@@ -249,7 +249,8 @@
 		<control type="grouplist">
 			<posx>91</posx>
 			<posy>534</posy>
-			<visible>Container.Content(Movies)</visible>
+			<visible>false</visible>
+			<!--<visible>Container.Content(Movies)</visible>-->
 			<control type="group">
 				<height>31</height>
 				<visible>!IsEmpty(ListItem.Rating)</visible>
@@ -306,7 +307,8 @@
 		<control type="grouplist">
 			<posx>91</posx>
 			<posy>534</posy>
-			<visible>Container.Content(tvshows)</visible>
+			<visible>false</visible>
+			<!--<visible>Container.Content(tvshows)</visible>-->
 			<control type="group">
 				<height>31</height>
 				<visible>!IsEmpty(ListItem.Rating)</visible>
@@ -356,7 +358,8 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<visible>Container.Content(seasons)</visible>
+			<visible>false</visible>
+			<!--<visible>Container.Content(seasons)</visible>-->
 			<posx>91</posx>
 			<posy>534</posy>
 			<control type="group">
